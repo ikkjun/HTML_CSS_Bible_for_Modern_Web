@@ -261,6 +261,7 @@
 <head>
     <title>Video.js Basic</title>
     <link href="https://vjs.zencdn.net/8.6.0/video-js.css" rel="stylesheet" />
+    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
 </head>
 <body>
     <video poster="http://placehold.it/400x200"
@@ -270,5 +271,55 @@
     </video>
 </body>
 
+<h1>2.9 입력 양식 태그</h1>
+<form action="">
+    <label for="name">아이디: </label>
+    <input type="text" value="안녕하세요" id="name"><br/>
+    비밀번호 <input type="password" name="" id=""><br/>
+    <br/>
+    좋아하는 과일<br/>
+    <input type="checkbox" name="" id="mango"><label for="mango">망고</label><br/>
+    <input type="checkbox" name="" id="peach"><label for="peach">복숭아</label><br/>
+    <input type="checkbox" name="" id="shine"><label for="shine">샤인머스켓</label><br/>
+    <input type="checkbox" name="" id="melon"><label for="melon">멜론</label><br/>
+    
+    <br/>
+    <label type="">학년</label><br/>
+    <label for="1학년">1학년: </label><input type="radio" name="grade" id="1학년"><br/>
+    <label for="2학년">2학년: </label><input type="radio" name="grade" id="2학년"><br/>
+    <label for="3학년">3학년: </label><input type="radio" name="grade" id="3학년"><br/>
+    <label for="4학년">4학년: </label><input type="radio" name="grade" id="4학년"><br/>
+
+</form>
+<br/>
+<textarea name="" id="" cols="30" rows="10">자기소개서 작성</textarea><br/>
+<p contenteditable="">클릭하면 수정된다</p>
+<select name="" id="">
+    <option value="">S-Class</option>
+    <option value="">E-Class</option>
+    <option value="">C-Class</option>
+</select>
+
+<h1>2.10 공간 분할 태그</h1>
+웹페이지는 크게 두 가지 속성으로 공간을 분할하게 된다. 
+Block 속성
+쌓는 것(한 줄을 전부 차지하는 것)
+div태그
+
+Inline 속성
+한 줄 안에 쌓이는 것
+span 태그
+
+<div>Block<span>Inline</span><span>Inline</span></div>
+<div>Block</div>
+<div>Block</div>
+<div>Block</div>
+<div>Block</div>
+
+<span>Inline</span>
+<span>Inline</span>
+<span>Inline</span>
+<span>Inline</span>
+<span>Inline</span>
 
 </html>
