@@ -266,12 +266,18 @@
 <body>
     <video poster="http://placehold.it/400x200"
            controls="controls" autoplay="autoplay" loop="loop" 
-           width="400" height="200">
+           width="400" height="200" muted="muted" class="video-js" data-setup="{}">
         <source src="IMG_7312.MOV" type="video/mp4"/>
     </video>
 </body>
 
 <h1>2.9 입력 양식 태그</h1>
+<h2>간단한 입력 양식</h2>
+<form method="post">
+    <input type="text" name="search"/>
+    <input type="submit"/>
+</form>
+
 <form action="">
     <label for="name">아이디: </label>
     <input type="text" value="안녕하세요" id="name"><br/>
