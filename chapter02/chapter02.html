@@ -273,38 +273,84 @@
 
 <h1>2.9 입력 양식 태그</h1>
 <h2>간단한 입력 양식</h2>
-<form method="post">
-    <input type="text" name="search"/>
-    <input type="submit"/>
-</form>
-
-<form action="">
-    <label for="name">아이디: </label>
-    <input type="text" value="안녕하세요" id="name"><br/>
-    비밀번호 <input type="password" name="" id=""><br/>
-    <br/>
-    좋아하는 과일<br/>
-    <input type="checkbox" name="" id="mango"><label for="mango">망고</label><br/>
-    <input type="checkbox" name="" id="peach"><label for="peach">복숭아</label><br/>
-    <input type="checkbox" name="" id="shine"><label for="shine">샤인머스켓</label><br/>
-    <input type="checkbox" name="" id="melon"><label for="melon">멜론</label><br/>
     
-    <br/>
-    <label type="">학년</label><br/>
-    <label for="1학년">1학년: </label><input type="radio" name="grade" id="1학년"><br/>
-    <label for="2학년">2학년: </label><input type="radio" name="grade" id="2학년"><br/>
-    <label for="3학년">3학년: </label><input type="radio" name="grade" id="3학년"><br/>
-    <label for="4학년">4학년: </label><input type="radio" name="grade" id="4학년"><br/>
-
+<form method="post">
+    <fieldset>
+        <legend>입력양식</legend>
+        
+        <label for="name">아이디: </label>
+        <input type="text" value="안녕하세요" id="name"><br/>
+        비밀번호 <input type="password" name="" id=""><br/>
+        <input type="file" name="file" id=""><br/>
+        
+        <br/>
+        좋아하는 과일<br/>
+        <input type="checkbox" name="" id="mango"><label for="mango">망고</label><br/>
+        <input type="checkbox" name="" id="peach"><label for="peach">복숭아</label><br/>
+        <input type="checkbox" name="" id="shine"><label for="shine">샤인머스켓</label><br/>
+        <input type="checkbox" name="" id="melon"><label for="melon">멜론</label><br/>
+        
+        <br/>
+        <label type="">학년</label><br/>
+        <label for="1학년">1학년: </label><input type="radio" name="grade" id="1학년"><br/>
+        <label for="2학년">2학년: </label><input type="radio" name="grade" id="2학년"><br/>
+        <label for="3학년">3학년: </label><input type="radio" name="grade" id="3학년"><br/>
+        <label for="4학년">4학년: </label><input type="radio" name="grade" id="4학년"><br/>
+        <input type="submit"/>     <input type="reset" value="초기화"><br/>
+    </fieldset>
 </form>
 <br/>
-<textarea name="" id="" cols="30" rows="10">자기소개서 작성</textarea><br/>
-<p contenteditable="">클릭하면 수정된다</p>
-<select name="" id="">
-    <option value="">S-Class</option>
-    <option value="">E-Class</option>
-    <option value="">C-Class</option>
-</select>
+
+<body>
+    <form action="">
+        <input type="color"/><br/>
+        <input type="date" name="" id=""><br/>
+        <input type="datetime" name="" id=""><br/>
+        <input type="datetime-local" name="" id=""><br/>
+        <input type="email" name="" id=""><br/>
+        <input type="month" name="" id=""><br/>
+        <input type="number" name="" id=""><br/>
+        <input type="range" name="" id=""><br/>
+        <input type="search" name="" id=""><br/>
+        <input type="tel" name="" id=""><br/>
+        <input type="time" name="" id=""><br/>
+        <input type="url" name="" id=""><br/>
+        <input type="week" name="" id=""><br/>
+
+    </form>
+</body>
+
+<body>
+    <textarea name="" id="" cols="30" rows="10">
+자기소개서 작성
+500자 이내로
+    </textarea><br/>    
+    <p contenteditable="">클릭하면 수정된다</p>
+</body>
+
+<body>
+    <select>
+        <option value="">G-Class</option>
+        <option value="">S-Class</option>
+        <option value="">E-Class</option>
+        <option value="">C-Class</option>
+    </select>    
+</body>
+<br/>
+<body>
+    <select name="" id="">
+        <optgroup label="HTML5">
+            <option value="">Multimedia Tag</option>    
+            <option value="">Connectivity</option>
+            <option value="">Device Access</option>
+        </optgroup>
+        <optgroup label="CSS3">
+            <option value="">Animation</option>
+            <option value="">3D Transform</option>
+        </optgroup>
+    </select>
+</body>
+
 
 <h1>2.10 공간 분할 태그</h1>
 웹페이지는 크게 두 가지 속성으로 공간을 분할하게 된다. 
@@ -313,7 +359,7 @@ Block 속성
 div태그
 
 Inline 속성
-한 줄 안에 쌓이는 것
+한 줄 안에 차례차례 위치하는 형식
 span 태그
 
 <div>Block<span>Inline</span><span>Inline</span></div>
@@ -327,5 +373,30 @@ span 태그
 <span>Inline</span>
 <span>Inline</span>
 <span>Inline</span>
+
+<body>
+    <header>
+        <h1>HTML5 Header</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Menu-1</a></li>
+            <li><a href="#">Menu-2</a></li>
+            <li><a href="#">Menu-3</a></li>
+        </ul>
+    </nav>
+    <section>
+        <article>
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>Exercitation aliqua duis sint sint ad minim anim ea qui.Consectetur sunt commodo qui do exercitation dolor dolore est laboris id nostrud.</p>
+        </article>
+        <article>
+            Nisi ipsum ullamco enim ex anim ea voluptate deserunt voluptate dolore elit elit ut duis.Nulla occaecat duis consequat adipisicing tempor esse.
+        </article>
+    </section>
+    <footer>
+        서울시 광진구 능동로 120
+    </footer>
+</body>
 
 </html>
