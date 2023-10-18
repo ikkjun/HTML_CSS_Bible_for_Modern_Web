@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Selector Basic Page</title>
+    <style>
+        p { counter-increment: rint;}
+        p::before { content: counter(rint) ".";}
+        p::after { content: "-" attr(data-page) " page";}
+        p::first-letter{font-size: 3em;}
+    </style>
+</head>
+<body>
+    <h1>Fugiat quis nulla anim non do voluptate eiusmod do.</h1>
+    <p data-page="52">Nisi Lorem esse pariatur pariatur ad laboris eiusmod nisi.Laborum veniam nostrud nisi veniam deserunt magna exercitation magna elit consequat officia amet. Nostrud cillum et do officia reprehenderit sunt id aute in officia velit et.</p>
+    <p data-page="273">Qui elit ullamco qui nulla ipsum do. Eu consectetur in qui excepteur exercitation qui elit et. Tempor sunt laborum voluptate qui exercitation elit deserunt exercitation laborum ad velit. Ea cillum laboris incididunt velit sit minim fugiat excepteur.</p>
+</body>
+</html>
