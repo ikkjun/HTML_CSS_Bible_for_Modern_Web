@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Playpen+Sans&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+        
+        .header > h1 {
+            font-family: 'Playpen Sans', cursive;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        input {display: none;}
+        input:nth-of-type(1) ~ div:nth-of-type(1) {
+            display: none;
+        }
+        input:nth-of-type(2) ~ div:nth-of-type(2) {
+            display: none;
+        }
+        input:nth-of-type(1):checked ~ div:nth-of-type(1) {
+            display: block;
+        }
+        input:nth-of-type(2):checked ~ div:nth-of-type(2) {
+            display: block;
+        }
+    </style>
+
+    <style>
+        .container {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        .content {
+            overflow: hidden;
+        }
+
+        .section {
+            width: 700px;
+            float: left;
+        }
+
+        .aside {
+            width: 250px;
+            float: right;
+        }
+
+        ul {overflow: hidden;}
+        li {float: left;}
+
+        .header {height: 100px; position: relative;}
+
+        .header h1 {
+            position: absolute;
+            left: 10px;
+            top: 30px;
+        }
+
+        .gnb {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+        }
+
+        .lnb {
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+        }
+
+        .container div {
+            box-sizing: border-box;
+            border: 1px solid black;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Proident nisi et veniam quis aliqua anim ex ea voluptate.</h1>
+            <div class="gnb">
+                <ul>
+                    <li>Lorem</li>
+                    <li>Ipsum</li>
+                    <li>dolor</li>
+                    <li>sit</li>
+                    <li>Amet</li>
+                </ul>
+            </div>
+            <div class="lnb">
+                <ul>
+                    <li>Lorem</li>
+                    <li>Ipsum</li>
+                    <li>Dolor</li>
+                    <li>sit</li>
+                    <li>Amet</li>
+                    <li>Cronosa</li>
+                    <li>Condrasa</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="section">
+                <article>
+                    <h1>Do consectetur in nulla sint adipisicing aliquip nulla cillum eu laborum dolor consequat velit.</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta aperiam asperiores molestiae esse, animi maiores possimus est, expedita cum temporibus doloremque quaerat mollitia perferendis laboriosam recusandae, nihil fuga iure repudiandae.
+                    Esse nihil odio aperiam rem minus expedita. Dolorum cupiditate, sit tenetur quisquam nulla in porro, placeat numquam aliquid reiciendis laborum necessitatibus rem consectetur reprehenderit amet est, fuga quos delectus odio?
+                    Incidunt ab, animi unde voluptatum dolor voluptates pariatur eius enim repellendus officia veritatis ullam ea iure aliquam sed asperiores quidem velit praesentium eos molestias soluta amet. Vero similique expedita earum.
+                    Aspernatur consequuntur, quis nemo dignissimos nihil molestias dolor eius iure molestiae eum et? Quae nobis fuga facilis atque eum soluta reprehenderit laboriosam neque quas. Culpa esse repellendus et nostrum enim.
+                    Ducimus aliquam deleniti omnis repellendus rerum pariatur ipsum? Veritatis, libero illum? Provident ipsam, unde quaerat repellat, itaque saepe deserunt cumque asperiores praesentium vel quidem, dolorem ex reprehenderit? Repellat, dignissimos aperiam.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam alias fugit inventore dolorem distinctio amet? Asperiores harum placeat molestias, dolor rerum aliquid temporibus, id officia excepturi dolores reiciendis, voluptatem repellat?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, hic! Rem, rerum velit tenetur nisi nam necessitatibus! Reprehenderit, quaerat. Consectetur deserunt, repellendus id iste at temporibus voluptatum magni natus nobis!</p>
+
+                </article>
+            </div>
+            <div class="aside">
+                <label for="tab-1">TAB1</label>
+                <label for="tab-2">TAB2</label>
+                <input type="radio" name="tab" id="tab-1" checked = "checked">
+                <input type="radio" name="tab" id="tab-2">
+                <div class="tab-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, beatae sit quas repellendus architecto laboriosam vero mollitia error, et consectetur obcaecati eos! Ab nemo dolor quo tempora assumenda illo laborum.
+                Consequatur dolor cupiditate rerum iusto, similique eveniet iure dolorem, molestias itaque at odit, reprehenderit neque unde! Similique minus odio laborum eaque doloribus, cupiditate esse quidem totam ipsa perferendis iste sint.
+                Id necessitatibus deleniti culpa architecto expedita saepe magni obcaecati fugit, consequatur quas, corrupti non, porro laborum sed temporibus dolore provident iusto ut. Eos dolorem culpa, necessitatibus tempora alias quisquam cumque?
+                Deleniti expedita nostrum, vel atque consequatur at hic repellat dolore dolor quae voluptas iure ut saepe consequuntur. Accusantium quam aliquam neque doloribus unde dicta maiores non culpa, fugit, libero corporis.Cillum officia Lorem anim esse elit cillum enim consectetur occaecat occaecat adipisicing minim ipsum.</div>
+                <div class="tab-item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus culpa velit autem repellendus cupiditate dicta nihil possimus unde quidem blanditiis illum debitis totam aspernatur praesentium ipsam repellat, quae accusantium inventore?
+                Alias ipsum nisi quo veniam voluptate earum ex fugit deserunt in, vel ut aliquid debitis sit, et laboriosam assumenda optio aut distinctio. Architecto sapiente suscipit itaque veritatis voluptatum, corporis placeat.
+                Nulla voluptatum explicabo temporibus vitae odio et ipsa iure, ratione at, ex veniam nisi nobis amet autem esse praesentium, numquam ipsum repellat itaque! Consectetur hic, quisquam id doloribus laborum dolorem?
+                Illum odio at tempore sapiente! Perferendis in corporis quod esse voluptates porro, aliquid reprehenderit eos sit id deleniti non labore? Cum, reiciendis facilis temporibus porro illo tenetur sunt? Maiores, alias.Anim et mollit eiusmod et do dolor reprehenderit ex aliquip aliqua laboris cupidatat.</div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sint commodi rem quidem dolore quibusdam unde, minima placeat autem ab voluptatum odio. Pariatur, minima asperiores accusamus repellat quam numquam ab.</p>
+        </div>
+    </div>
+
+</body>
+</html>
