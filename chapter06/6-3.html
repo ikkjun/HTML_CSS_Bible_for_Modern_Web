@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap" rel="stylesheet">
+    <title>Chapter 6</title>
+    <!--초기화-->
+    <style>
+        * { margin: 0; padding: 0;}
+        body {font-family: 'Playpen Sans', cursive;}
+        li { list-style: none; }
+        a { text-decoration: none; }
+    </style>
+    <!--헤더-->
+    <style></style>
+    <!-- 스프라이트 이미지 -->
+    <style></style>
+    <!-- 토글 목록 -->
+    <style></style>
+    <!-- 내비게이션(1) -->
+    <style></style>
+    <!-- 내비게이션(2) -->
+    <style></style>
+    <!-- 본문 -->
+    <style></style>
+    <!-- 푸터 -->
+    <style></style>
+    <style>
+        .icon {display: block;}
+
+        .bg-broccoli_40295_1280 {
+            width: 138px; height: 142px;
+            background: url('css_sprites.png') -1px -1px;
+        }
+        .bg-alien_153542_1280 {
+            width: 109px; height: 142px;
+            background: url('css_sprites.png') -270px -1px;
+        }
+
+        .bg-padlock_308589_1280 {
+            width: 127px; height: 142px;
+            background: url('css_sprites.png') -141px -1px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="main_header">
+            <i class="icon bg-broccoli_40295_1280"></i>
+            <h1>Mobile</h1>
+            <i class="icon bg-alien_153542_1280"></i>
+        </div>
+        <style>
+            #main_header {
+                height: 149px;
+                line-height: 149px;
+                text-align: center;
+                background: url(header_background.jpeg);
+                position: relative;
+            }
+            #main_header > h1 {
+                color: white;
+            }
+            .bg-broccoli_40295_1280 {
+                position: absolute;
+                left: 5px; top: 7px;
+            }
+            .bg-alien_153542_1280 {
+                position: absolute;
+                right: 5px; top: 7px;
+            }
+        </style>
+        <div id="bottom_gnb">
+            <div><a href="#">버튼</a></div>
+            <div><a href="#">버튼</a></div>
+            <div><a href="#">버튼</a></div>
+            <div><a href="#">버튼</a></div>
+            <div><a href="#">버튼</a></div>
+        </div>
+        <style>
+            #bottom_gnb { 
+                width: 100%; 
+                border-bottom: 1px solid black;
+                display: table;
+            }
+            #bottom_gnb > div {
+                text-align: center;
+                display: table-cell;
+            }
+            #bottom_gnb > div > a {
+                display: block;
+                height: 35px;
+                line-height: 35px;
+                text-decoration: none;
+                color: black;
+            }
+        </style>
+    </div>
+</body>
+</html>
