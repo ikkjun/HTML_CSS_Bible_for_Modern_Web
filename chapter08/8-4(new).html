@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 8</title>
+</head>
+<!-- 초기화 -->
+<style>
+    * {
+        margin: 0; padding: 0;
+        font: normal 12px 'Dotum';
+    }
+    a {text-decoration: none;}
+    img {border: 0;}
+    ul {list-style: none;}
+    body {
+        width: 960px;
+        margin: 0 auto;
+    }
+</style>
+<!-- 헤더 -->
+<style>
+    #main_header {
+        position: relative;
+        height: 75px;
+    }
+    #main_header > h1.logo {
+        position: absolute;
+        left: 15px; top: 10px;
+    }
+
+    #main_header > div.login_menu {
+        position: absolute;
+        top: 10px; right: 0px;
+    }
+</style>
+<!-- 사이드 -->
+<style>
+    body {
+        position: relative;
+    }
+    #global_aside {
+        position: absolute;
+        left: 990px; top: 75px;
+        width: 90px;
+    }
+    #global_aside > a {
+        display: block;
+        margin-bottom: 5px;
+    }
+</style>
+<!-- 내비게이션 위  -->
+<style>
+    #top_gnb {
+        height: 32px;
+        position: relative;
+        top:-1px;
+        left: -1px;
+    }
+    #top_gnb > .gnb-menu > .gnb-menu-item {
+        float: left;
+        margin-right: 2px;
+        margin-left: 10px;
+        padding: 0 10px;
+        height: 32px;
+    }
+
+    #top_gnb > .gnb-menu > .gnb-menu-item > a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        line-height: 32px;
+        height: 32px;
+        font-size: 12px;
+    }
+    #top_gnb > .gnb-menu > .gnb-menu-item > a > span {
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        color: brown;
+    }
+    #top_gnb > .gnb-menu > .gnb-menu-item > a > img{
+        width: 20px;
+        object-fit: contain;
+    }
+</style>
+<!-- 내비게이션 아래 -->
+<style></style>
+<!-- 목록 -->
+<style></style>
+<!-- 본문 -->
+<style></style>
+<!-- 푸터 -->
+<style></style>
+<body>
+    <header id="main_header">
+        <h1 class="logo">
+            <a href="#"><img src="https://image7.coupangcdn.com/image/coupang/common/logo_coupang_w350.png" width="174" height="41" alt="쿠팡로고"></a>
+        </h1>
+        <div class="login_menu">
+            <span><a href="#">로그인</a></span>
+            <span><a href="#">회원가입</a></span>
+            <span><a href="#">고객센터</a></span>
+        </div>
+    </header>
+    <aside id="global_aside">
+        <a><img src="http://placehold.it/90x160" alt="이미지"/></a>
+        <a><img src="http://placehold.it/90x160" alt="이미지"/></a>
+        <a><img src="http://placehold.it/90x160" alt="이미지"/></a>
+        <a><img src="http://placehold.it/90x160" alt="이미지"/></a>
+        <a><img src="http://placehold.it/90x160" alt="이미지"/></a>
+        <a><img src="http://placehold.it/90x160" alt="이미지"/></a>
+        <a><img src="http://placehold.it/90x160" alt="이미지"/></a>
+        <a><img src="http://placehold.it/90x160" alt="이미지"/></a>
+        <a><img src="http://placehold.it/90x160" alt="이미지"/></a>
+        <a><img src="http://placehold.it/90x160" alt="이미지"/></a>
+    </aside>
+    <nav id="top_gnb">
+        <ul class="gnb-menu">
+            <li class="gnb-menu-item">
+                <a href="#">
+                    <img src="https://image6.coupangcdn.com/image/coupang/common/coupang_play_icon@3x.png" alt="쿠팡플레이">
+                    <span>쿠팡플레이</span>
+                </a>
+            </li>
+            <li class="gnb-menu-item">
+                <a href="#">
+                    <img src="https://image10.coupangcdn.com/image/coupang/rds/logo/xxhdpi/logo_rocket_symbol_large.png" alt="">
+                    <span>로켓배송</span>
+                </a>
+            </li>
+            <li class="gnb-menu-item">
+                <a href="#">
+                    <img src="https://image9.coupangcdn.com/image/coupang/common/pc_header_rocket_fresh_1x.png" alt="">
+                    <span>로켓프레시</span>
+                </a>
+            </li>
+            <li class="gnb-menu-item">
+                <a href="#">
+                    <img src="https://image6.coupangcdn.com/image/coupang/common/logoBizonlyBrown.png" alt="">
+                    <span>쿠팡비즈</span>
+                </a>
+            </li>
+            <li class="gnb-menu-item">
+                <a href="#">
+                    <img src="https://image6.coupangcdn.com/image/coupang/home/icons/Overseas.png" alt="">
+                    <span>로켓 직구</span>
+                </a>
+            </li>
+            <li class="gnb-menu-item">
+                <a href="#">
+                    <img src="https://image10.coupangcdn.com/image/coupang/home/icons/RETURNED_MARKET_B@2x.png" alt="">
+                    <span>반품마켓</span>
+                </a>
+            </li>
+            <li class="gnb-menu-item">
+                <a href="#">
+                    <img src="https://image9.coupangcdn.com/image/coupang/common/icon_government_promotion.png" alt="">
+                    <span>착한상점</span>
+                </a>
+            </li>
+            <li class="gnb-menu-item">
+                <a href="#">
+                    <img src="https://image9.coupangcdn.com/image/coupang/common/icon_travel.png" alt="">
+                    <span>여행티켓</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
