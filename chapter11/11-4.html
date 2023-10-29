@@ -3,24 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Media Query Basic</title>
+    <!-- <link rel="stylesheet" href="desktop.css" media="screen">
+    <link rel="stylesheet" href="print.css" media="print"> -->
     <style>
-        @media screen and (max-width: 767px) { 
-            * { color: yellowgreen; }
+        @media screen {
+            html {
+                height: 100%;
+                background: black;
+            }
+            body {
+                color: blueviolet;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
         }
-        @media screen and (min-width:768px) and (max-width:960px) { 
-            * { color: blueviolet; }
-        }
-        @media screen and (min-width: 961px) {
-            * { color: brown; }
+        @media print {
+            h1 {
+                text-align: center;
+                color:darkcyan; font-family: Georgia, 'Times New Roman', Times, serif;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Exercitation dolor do pariatur deserunt laborum quis.</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis soluta odio optio itaque fugiat perferendis qui nemo ducimus, ad sit eius distinctio illum obcaecati iure laboriosam vel cum ut? Veritatis.
-    Temporibus sed ex itaque vitae maiores illo. Accusamus dolorem, culpa laboriosam dignissimos tempora magni voluptate deleniti? Voluptates, sequi nam consectetur quaerat inventore nostrum eum eius ad, ratione dignissimos, tempora nisi.
-    Explicabo natus doloremque nesciunt laborum aliquam dolor, quod, voluptatibus qui recusandae adipisci perferendis cum unde. Quidem amet nemo, beatae ducimus inventore, similique consequuntur ab eligendi in ex vero, molestiae reprehenderit!
-    Porro, sapiente beatae. Corporis ullam suscipit similique quasi voluptates soluta doloribus ipsam, nostrum maxime rem at ad deleniti dicta nihil ut enim voluptatem tempore perferendis, dignissimos sequi velit id hic.</p>
+    <h1>Eu sunt tempor excepteur amet dolore mollit dolore anim sint tempor.</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus aut deleniti cum sint reiciendis consectetur explicabo accusantium, iure eveniet consequatur ut maxime repellat tempore similique iusto facilis magnam, labore ratione?
+    Iste id delectus numquam quasi perferendis consequuntur quod aspernatur corrupti quo aliquam mollitia ut ea, ullam debitis! Fugiat qui ab nobis, laudantium doloremque, incidunt facilis in, blanditiis esse deserunt impedit!
+    Quibusdam esse dolor, distinctio veritatis quae nihil assumenda ut labore aspernatur delectus quasi molestias doloremque beatae totam ipsum rerum, optio deleniti unde illo quidem cupiditate? Cum dolorum impedit itaque fugit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, repellendus similique quaerat non, provident vel commodi dolorum dignissimos eos maiores assumenda doloremque omnis cupiditate! Exercitationem soluta molestiae quo repellendus laborum.
+    Est officiis fuga voluptates possimus delectus aperiam iste, ea asperiores, sint consequuntur exercitationem aspernatur ut labore consectetur nesciunt eius beatae natus. Qui recusandae eligendi facilis odit fugit voluptate possimus nam.
+    Vel quam corporis illum, provident quia ducimus veniam ad dolorum officiis, accusantium fugiat nobis voluptatibus recusandae culpa quas eligendi autem, eaque nihil consequatur libero sunt. Assumenda incidunt rem similique nemo!</p>
 </body>
 </html>
