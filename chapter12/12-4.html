@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 960px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 20% 80%; /* 2fr 8fr */
+            grid-template-rows: 500px 1000px;
+            gap: 10px;
+            grid-template-areas: 
+            'header header'
+            'aside  section'
+            'footer footer';
+        }
+
+        .header {
+            /* grid-row: 1/2;      1에서 2칸을 차지해라
+            grid-column: 1/3; */
+            grid-area: header;
+        }
+        .aside { grid-area: aside;} 
+        .section { grid-area: section;}
+        .footer {
+            /* grid-row: 3 / 4;
+            grid-column: 1 / 3; */
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Header</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In nobis, voluptatibus debitis voluptate cupiditate ratione quas error libero modi delectus id quod corrupti dicta commodi. Maxime aut eveniet iure ut.
+            Est hic iste rem, perspiciatis sequi quisquam at distinctio nemo culpa voluptatum error iure minima dolorum adipisci dolore alias commodi modi vel id eaque placeat asperiores dignissimos reprehenderit! Corrupti, libero.
+            Qui, labore illum obcaecati sed unde eveniet voluptates. Ab delectus tempore eos corrupti repellendus et enim. Voluptate voluptates corrupti officia asperiores numquam, dignissimos, deserunt libero necessitatibus, distinctio soluta suscipit dolorem.</p>
+        </div>
+        <div class="aside">
+            <h1>Aside</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam animi mollitia recusandae maiores vitae nemo illo, harum unde omnis! Vero doloremque ea itaque id, amet nam ab error numquam. Adipisci!
+            Deleniti iure numquam suscipit dicta aut! Hic atque sequi eum dignissimos quae. Assumenda nisi harum praesentium quaerat animi nostrum, ipsa voluptatibus ratione quis quisquam sed quod? Dicta modi quia a?
+            Voluptas officiis voluptate assumenda ea, nihil perspiciatis ipsa praesentium architecto repudiandae sint asperiores soluta magnam debitis quae, harum, sapiente blanditiis quos accusantium suscipit excepturi omnis provident vitae expedita odit. Odit!
+            Temporibus optio exercitationem dolores debitis labore eaque facilis sed praesentium odit? Libero atque molestias assumenda. Est quia ad harum sit ipsam, distinctio obcaecati quam at quisquam rerum exercitationem sunt velit.</p>
+        </div>
+        <div class="section">
+            <h1>Section</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio deleniti ex repellendus reprehenderit quis est impedit, veritatis reiciendis ducimus molestiae. Dolores enim esse dolore repellendus veritatis ea doloremque veniam minus?
+            Dolore nisi dolorem, nulla facilis impedit dolor voluptatem obcaecati reiciendis suscipit placeat. Eligendi repellat sunt rem. Et officiis animi saepe unde voluptate dolores optio nemo. Laboriosam asperiores corporis nulla dolorum?
+            Sit tempore quibusdam corrupti sint dolores dolorum repudiandae. Corporis maxime recusandae at ducimus omnis repudiandae porro. Nihil amet suscipit aliquam, ipsa sint perspiciatis corporis, et veritatis, vel distinctio earum voluptatem!
+            Autem obcaecati quo, neque a cum magnam et tempora repellendus excepturi. Sed facere corrupti aperiam, incidunt illo nostrum amet voluptatem delectus autem quod a quaerat non ut laborum voluptates laudantium.</p>
+        </div>
+        <div class="footer">
+            <h1>Footer</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, hic dolorum aliquid dicta quia rem sapiente dolorem nostrum? Quaerat perspiciatis accusantium optio odit qui placeat esse dolorem saepe earum vel.
+            Porro voluptate amet minima nostrum optio veniam, debitis natus! Tempora numquam qui quam corrupti cum laboriosam quaerat earum at, aspernatur eveniet accusamus molestias magni vel suscipit officiis nobis maxime hic.
+            Dolores maxime dignissimos temporibus ipsa voluptas quos sint quam, incidunt esse totam delectus illum ut explicabo commodi consectetur natus quasi enim sit beatae nobis non? Maxime beatae aliquam illum dignissimos!</p>
+        </div>
+    </div>
+</body>
+</html>
